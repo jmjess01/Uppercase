@@ -1,15 +1,26 @@
-//
-//  main.cpp
-//  Uppercase
-//
-//  Created by Meilan Jess on 12/12/17.
-//  Copyright © 2017 Meilan Jess. All rights reserved.
-//
-
+//lab 9b...why isn't this labeled lab 10 i'm triggered.
 #include <iostream>
+#include <string>
+#include <ctype.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+using namespace std;
+
+int main(){
+    
+    char tool [6];
+    cout << "idk put in liek 7 letters maybe? You'll get some prime witchcraft : " << endl;
+    for (int i=0; i <= 6; i++) {
+        cin >> tool[i];
+    }
+    
+    for (int i =6; i>= 0; i--) {
+        
+        char letter = ' ';
+        letter = toupper(tool[i]);
+        tool[i] = letter;
+        cout << tool[i] << endl;
+        
+    }
+    
+    return 10;
 }
